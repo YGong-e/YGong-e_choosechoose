@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>통신 실험</title>
+    <style>
+        body {
+            background-image:url(image/겨울2.jpg);
+            background-size:cover;
+        }
+        
+        .title {
+            font-size: 70px;
+            font-weight: bold;
+            color: white;
+            transition: 1s;
+            text-shadow: 0 0 10px #426DFB,
+                0 0 20px white,
+                0 0 30px white,
+                0 0 40px white,
+                0 0 70px white,
+                0 0 80px white,
+                0 0 100px white,
+                0 0 150px white;
+        }
+        .title:hover { text-shadow: 0 0 .1em, 0 0 .3em; }
+        
+         .title2 {
+            font-size: 70px;
+            font-weight: bold;
+            color: white;
+            transition: 1s;
+            text-shadow: 0 0 10px #FF0000,
+                0 0 20px white,
+                0 0 30px white,
+                0 0 40px white,
+                0 0 70px white,
+                0 0 80px white,
+                0 0 100px white,
+                0 0 150px white;
+        }
+        .title2:hover { text-shadow: 0 0 .1em, 0 0 .3em; }
+        
+        .image {
+          transform: scale(1);
+          -webkit-transform: scale(1);
+          -moz-transform: scale(1);
+          -ms-transform: scale(1);
+          -o-transform: scale(1);
+          transition: all 0.3s ease-in-out;
+        }
+        .image:hover {
+          transform: scale(1.15);
+          -webkit-transform: scale(1.15);
+          -moz-transform: scale(1.15);
+          -ms-transform: scale(1.15);
+          -o-transform: scale(1.15);
+        }
+        
+        .button {
+            box-shadow:inset 0px 1px 0px 0px #dcecfb;
+            background:linear-gradient(to bottom, #bddbfa 5%, #80b5ea 100%);
+            background-color:#bddbfa;
+            border-radius:6px;
+            border:1px solid #84bbf3;
+            display:inline-block;
+            cursor:pointer;
+            color:#ffffff;
+            font-family:Arial;
+            font-size:20px;
+            font-weight:bold;
+            padding:6px 24px;
+            text-decoration:none;
+            text-shadow:0px 1px 0px #528ecc;
+        }
+        .button:hover {
+            background:linear-gradient(to bottom, #80b5ea 5%, #bddbfa 100%);
+            background-color:#80b5ea;
+        }
+        .button:active {
+            position:relative;
+            top:1px;
+        }
+    </style>
+  </head>
+  <body>
+    <center>
+    <h2>다시 돌아온 여러분의 골라골라</h2>
+    <h1>역시 패션의 완성은 얼굴</h1>    
+    <p class='title'>골라골라</p>
+     <p class='title2'>VER.2 for Fall,Winter </p>
+    <br>
+    <pre>
+    <img class='image' src="image/white.jpg" width="200" height="300">                    <img class='image' src="image/njh.jpg" width="200" height="300">                    <img class='image' src="image/juice.jpg" width="200" height="300">
+    </pre>
+    <br>
+    <form action='/arr1' method="post">
+      <input class='button' type='submit' value='패션 고르기' />
+      </form>
+      </center>
+  </body>
+</html>

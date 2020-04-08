@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>통신 실험</title>
+    <style>
+        body {
+             background-color: lightgoldenrodyellow;
+            text-align: center;
+        }
+        
+        .button {
+            box-shadow:inset 0px 1px 0px 0px #dcecfb;
+            background:linear-gradient(to bottom, #bddbfa 5%, #80b5ea 100%);
+            background-color:#bddbfa;
+            border-radius:6px;
+            border:1px solid #84bbf3;
+            display:inline-block;
+            cursor:pointer;
+            color:#ffffff;
+            font-family:Arial;
+            font-size:20px;
+            font-weight:bold;
+            padding:6px 24px;
+            text-decoration:none;
+            text-shadow:0px 1px 0px #528ecc;
+        }
+        .button:hover {
+            background:linear-gradient(to bottom, #80b5ea 5%, #bddbfa 100%);
+            background-color:#80b5ea;
+        }
+        .button:active {
+            position:relative;
+            top:1px;
+        }
+    </style>
+  </head>
+  <body>
+    <h1><b>여러분의 패션이 궁금합니다!</b></h1><br>
+    <form action="/arr" method="get">
+        <h3>외투를 고르세요</h3>
+        <label><input type='radio' name='coat' value='1' checked='checked' />코트</label>
+        <label><input type='radio' name='coat' value='2' />패딩</label>
+        <label><input type='radio' name='coat' value='3' />야상</label>
+        <label><input type='radio' name='coat' value='4' />바람막이</label>
+        <label><input type='radio' name='coat' value='5' />후리스</label>
+        <label><input type='radio' name='coat' value='6' />트렌치코트</label>
+        <label><input type='radio' name='coat' value='7' />야구점퍼</label>
+        <label><input type='radio' name='coat' value='8' />선택안함</label>
+        <br><br>
+        
+        <h3>상의를 고르세요</h3>
+        <label><input type='radio' name='top' value='1' checked='checked' />셔츠</label>
+        <label><input type='radio' name='top' value='2' />맨투맨</label>
+        <label><input type='radio' name='top' value='3' />후드티</label>
+        <label><input type='radio' name='top' value='4' />츄리닝</label>
+        <label><input type='radio' name='top' value='5' />니트</label>
+        <label><input type='radio' name='top' value='6' />가디건</label>
+        <label><input type='radio' name='top' value='7' />스웨터</label>
+        <label><input type='radio' name='top' value='8' />터틀넥</label>
+        <label><input type='radio' name='top' value='9' />폴로티</label>
+        <label><input type='radio' name='top' value='10' />반팔티</label>
+        <br><br>
+        
+        <h3>하의를 고르세요</h3>
+        <label><input type='radio' name='bottom' value='1' checked='checked' />반바지</label>
+        <label><input type='radio' name='bottom' value='2' />청바지</label>
+        <label><input type='radio' name='bottom' value='3' />면바지</label>
+        <label><input type='radio' name='bottom' value='4' />츄리닝</label>
+        <label><input type='radio' name='bottom' value='5' />슬렉스</label>
+        <label><input type='radio' name='bottom' value='6' />배기</label>
+        <label><input type='radio' name='bottom' value='7' />린넨</label>
+        <label><input type='radio' name='bottom' value='8' />모직바지</label>
+        <label><input type='radio' name='bottom' value='9' />나팔바지</label>
+        <label><input type='radio' name='bottom' value='10' />치노팬츠</label>
+        <br><br>
+        
+        <h3>신발을 고르세요</h3>
+        <label><input type='radio' name='shoes' value='1' checked='checked' />구두</label>
+        <label><input type='radio' name='shoes' value='2' />스니커즈</label>
+        <label><input type='radio' name='shoes' value='3' />슬리퍼</label>
+        <label><input type='radio' name='shoes' value='4' />부츠</label>
+        <label><input type='radio' name='shoes' value='5' />컨버스</label>
+        <label><input type='radio' name='shoes' value='6' />농구화</label>
+        <label><input type='radio' name='shoes' value='7' />샌들</label>
+        <label><input type='radio' name='shoes' value='8' />워커</label>
+        <label><input type='radio' name='shoes' value='9' />단화</label>
+        <label><input type='radio' name='shoes' value='10' />크록스</label>
+        <br><br>
+        
+        <h3>악세사리를 고르세요</h3>
+        <label><input type='radio' name='accessory' value='1' checked='checked' />모자</label>
+        <label><input type='radio' name='accessory' value='2' />벨트</label>
+        <label><input type='radio' name='accessory' value='3' />넥타이</label>
+        <label><input type='radio' name='accessory' value='4' />목도리</label>
+        <label><input type='radio' name='accessory' value='5' />안경</label>
+        <label><input type='radio' name='accessory' value='6' />목걸이</label>
+        <label><input type='radio' name='accessory' value='7' />시계</label>
+        <label><input type='radio' name='accessory' value='8' />백팩</label>
+        <label><input type='radio' name='accessory' value='9' />에코백</label>
+        <label><input type='radio' name='accessory' value='10' />선글라스</label>
+        <label><input type='radio' name='accessory' value='11' />선택 안함</label>
+        <br><br><br>
+        
+        <input class='button' type='submit' value='패션 추천 보러 가기' />
+    </form>
+  </body>
+</html>
+ 
